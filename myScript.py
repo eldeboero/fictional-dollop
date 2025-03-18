@@ -58,6 +58,7 @@ def getPersonById(userId: str) -> Person:
     This function needs to be replaced with something that uses a secure storage
     '''
 
+
     ben = Person("Ben DeBoer", "ben_id", "fakekey1")
     bob = Person("Bob Jones", "bob_id", "fakekey2")
     people = [ben, bob]
@@ -68,3 +69,6 @@ def getPersonById(userId: str) -> Person:
 
 def registerPerson(userName: str) -> str:
     ...
+
+def loadFromDisk() -> None:
+    file_path = 'appData/people.csv'
